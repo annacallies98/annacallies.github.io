@@ -1,0 +1,123 @@
+@font-face{
+    src: url(fonts/AGentleTouch.ttf);
+    font-family: A Gentle Touch;
+    src: url(fonts/KGIWantCrazy.otf);
+    font-family: KG I Want Crazy;
+    src: url(fonts/PlayfairDisplay-Bold.ttf);
+    font-family: Playfair Display Bold;
+    src: url(fonts/PlayfirDisplay-Regular.ttf);
+    font-family: Playfair Display Regular;
+    src: url(PTMono.ttc);
+    font-family: PT Mono;
+    src: url(fonts/PTSans.ttc);
+    font-family: PT Sans;
+    src: url(fonts/Monaco.ttf);
+    font-family: Monaco;
+    src: url(fonts/HelveticaNeue.ttc);
+    font-family: Helvetica Neue;
+}
+header{
+    background-image: url(images/bunnybanner.jpeg);
+    height: 250px;
+    /* header image from: https://www.freepik.com/premium-vector/draw-banner-cute-bunny-easter-spring_24279556.htm  by anchaleear*/
+}
+/* Anna Callies Creativity logo */
+.image-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(250, 243, 246, 0.90);
+    border-radius: 3px;
+}
+
+
+.navigation ul{
+    list-style-type: none; 
+    text-align: center; 
+    margin-top: 76px;
+
+}
+.navigation li{
+    display: inline;
+    padding-right: 20px;    
+    font-family: KG I Want Crazy;
+}
+.navigation a:link{
+    text-decoration: none;
+    color: #847676
+}
+.navigation a:visited{
+    text-decoration: none;
+    color: #847676
+}
+.navigation a:hover{
+    text-decoration: underline;
+    color: #847676
+}
+.aboutSD{
+    padding-bottom: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    font-size: 30px;    
+    line-height: 45px;
+
+    font-family: Playfair Display;
+    text-align: center;
+    color: #FFEFF1;
+    height: 500px;
+    }
+
+.container .left{
+    background-color:#E2ABAC;
+    padding: 15px;
+}
+
+
+.middle{
+    /* grid-row:1/4; */
+    background-color: #E2ABAC;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: auto;
+}
+
+.right{
+    /* grid-row: 1/4; */
+    background-color: #E2ABAC;
+    padding-top: 10px;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+footer{
+    text-align: center;
+    background-color: #FDCBD6;
+    padding: 20px;
+    color: #676767f7;
+}
+.links-socialnetworks ul{
+    list-style-type: none;
+    text-align: center;
+}
+.links-socialnetworks li{
+    display: inline;
+    padding-right: 10px;
+}
+.links-socialnetworks a:link{
+    color:#847676;
+}
+
+.links-socialnetworks a:visited{
+    color:#847676;
+}
+.links-socialnetworks a:hover{
+    color:#f4859b;
+}
