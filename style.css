@@ -1,0 +1,171 @@
+@font-face{
+    src: url(fonts/AGentleTouch.ttf);
+    font-family: A Gentle Touch;
+    src: url(fonts/KGIWantCrazy.otf);
+    font-family: KG I Want Crazy;
+    src: url(fonts/PlayfairDisplay-Bold.ttf);
+    font-family: Playfair Display Bold;
+    src: url(fonts/PlayfirDisplay-Regular.ttf);
+    font-family: Playfair Display Regular;
+    src: url(PTMono.ttc);
+    font-family: PT Mono;
+    src: url(fonts/PTSans.ttc);
+    font-family: PT Sans;
+    src: url(fonts/Monaco.ttf);
+    font-family: Monaco;
+    src: url(fonts/HelveticaNeue.ttc);
+    font-family: Helvetica Neue;
+}
+
+body {
+    background-color: #FFEFF1;
+    font-family: Helvetica Neue;
+    line-height: 25px;
+    color: #676767f7;
+}
+.site{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5fr;
+    grid-template-areas:
+        "top"
+        "title"
+        "main"
+        "side"
+        "bottom";
+}
+
+.top-header{
+    grid-area: top;
+}
+header{
+    background-image: url(images/bunnybanner.jpeg);
+    height: 250px;
+    /* header image from: https://www.freepik.com/premium-vector/draw-banner-cute-bunny-easter-spring_24279556.htm  by anchaleear*/
+}
+.image-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(250, 243, 246, 0.90);
+    border-radius: 3px;
+}
+.navigation ul{
+    list-style-type: none; 
+    text-align: center; 
+    margin-top: 76px;
+}
+.navigation li{
+    display: inline;
+    padding-right: 20px;    
+    font-family: KG I Want Crazy;
+}
+.navigation a:link{
+    text-decoration: none;
+    color: #847676;
+}
+.navigation a:visited{
+    text-decoration: none;
+    color: #847676;
+}
+.navigation a:hover{
+    text-decoration: underline;
+    color: #847676;
+}
+
+.title {
+    grid-area: title;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+    .title h1 {
+        font-family: Playfair Display Regular;
+        font-size: 50px;
+        color: #E2ABAC;
+    }
+
+.main-content {
+    grid-area: main;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+    .main-content .aboutSD {
+        padding-bottom: 20px;
+    }
+        .main-content .aboutSD h2 {
+            font-family: KG I Want Crazy;
+            text-align: center;
+            font-size: 25px;
+            color: #E2ABAC;
+        }
+
+
+.side-content {
+    grid-area: side;
+    /* nested grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "bunny bio pic";
+    grid-gap: 1px;
+   
+}
+.left{
+    grid-area: bunny;
+    background-color:#E2ABAC;
+}
+    .left .columnA{
+        margin-top: 10px;
+    }
+.middle{
+    grid-area: bio;
+    background-color: #E2ABAC;
+    font-size: 30px;
+    line-height: 45px;
+    font-family: Playfair Display;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: #FFEFF1;
+
+}
+.right{
+    grid-area: pic;
+    background-color: #E2ABAC;
+}
+
+.bottom-footer{
+    grid-area: bottom;
+}
+footer{
+    grid-area: bottom;
+    text-align: center;
+    background-color: #FDCBD6;
+    padding: 20px;
+    color: #676767f7;
+}
+.links-socialnetworks ul{
+    list-style-type: none;
+    text-align: center;
+}
+.links-socialnetworks li{
+    display: inline;
+    padding-right: 10px;
+}
+.links-socialnetworks a:link{
+    color:#847676;
+}
+.links-socialnetworks a:visited{
+    color:#847676;
+}
+.links-socialnetworks a:hover{
+    color:#f4859b;
+}
