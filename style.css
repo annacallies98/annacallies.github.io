@@ -35,7 +35,6 @@ body {
         "side"
         "bottom";
 }
-
 .top-header{
     grid-area: top;
 }
@@ -75,19 +74,16 @@ header{
     text-decoration: underline;
     color: #847676;
 }
-
 .title {
     grid-area: title;
     margin-left: 20px;
     margin-right: 20px;
 }
-
     .title h1 {
         font-family: Playfair Display Regular;
         font-size: 50px;
         color: #E2ABAC;
     }
-
 .main-content {
     grid-area: main;
     margin-left: 20px;
@@ -102,8 +98,6 @@ header{
             font-size: 25px;
             color: #E2ABAC;
         }
-
-
 .side-content {
     grid-area: side;
     /* nested grid */
@@ -113,7 +107,6 @@ header{
     grid-template-areas:
         "bunny bio pic";
     grid-gap: 1px;
-   
 }
 .left{
     grid-area: bunny;
@@ -135,13 +128,11 @@ header{
     padding-right: 10%;
     padding-left: 10%;
     color: #FFEFF1;
-
 }
 .right{
     grid-area: pic;
     background-color: #E2ABAC;
 }
-
 .bottom-footer{
     grid-area: bottom;
 }
