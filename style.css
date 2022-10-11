@@ -16,12 +16,19 @@
     src: url(fonts/HelveticaNeue.ttc);
     font-family: Helvetica Neue;
 }
-
+:root{
+    --background: #FFEFF1;
+    --title: #E2ABAC;
+    --pink-highlighter: #f4859b;
+    --darkgrey-text: #847676;
+    --header-footer: #FFD6DE;
+    --almost-white: #FFEFF1;
+}
 body {
-    background-color: #FFEFF1;
+    background-color: var(--background);
     font-family: Helvetica Neue;
     line-height: 25px;
-    color: #676767f7;
+    color: var(--darkgrey-text);
 }
 .site{
     width: 100%;
@@ -34,6 +41,7 @@ body {
         "main"
         "side"
         "bottom";
+    font-size: 16px;
 }
 .top-header{
     grid-area: top;
@@ -41,6 +49,7 @@ body {
 header{
     background-image: url(images/bunnybanner.jpeg);
     height: 250px;
+    background-color: var(--header-footer);
     /* header image from: https://www.freepik.com/premium-vector/draw-banner-cute-bunny-easter-spring_24279556.htm  by anchaleear*/
 }
 .image-logo{
@@ -56,6 +65,7 @@ header{
     list-style-type: none; 
     text-align: center; 
     margin-top: 76px;
+    font-size: 22px;
 }
 .navigation li{
     display: inline;
@@ -64,15 +74,19 @@ header{
 }
 .navigation a:link{
     text-decoration: none;
-    color: #847676;
+    color: var(--darkgrey-text);
 }
 .navigation a:visited{
     text-decoration: none;
-    color: #847676;
+    color: var(--darkgrey-text);
 }
 .navigation a:hover{
     text-decoration: underline;
-    color: #847676;
+    color: var(--pink-highlighter);
+}
+.navigation a:active{
+    text-decoration: underline;
+    color: var(--almost-white);
 }
 .title {
     grid-area: title;
@@ -82,7 +96,7 @@ header{
     .title h1 {
         font-family: Playfair Display Regular;
         font-size: 50px;
-        color: #E2ABAC;
+        color: var(--title);
     }
 .main-content {
     grid-area: main;
@@ -96,7 +110,7 @@ header{
             font-family: KG I Want Crazy;
             text-align: center;
             font-size: 25px;
-            color: #E2ABAC;
+            color: var(--title);
         }
 .side-content {
     grid-area: side;
@@ -110,14 +124,14 @@ header{
 }
 .left{
     grid-area: bunny;
-    background-color:#E2ABAC;
+    background-color: var(--title);
 }
     .left .columnA{
         margin-top: 10px;
     }
 .middle{
     grid-area: bio;
-    background-color: #E2ABAC;
+    background-color: var(--title);
     font-size: 30px;
     line-height: 45px;
     font-family: Playfair Display;
@@ -127,22 +141,53 @@ header{
     align-items: center;
     padding-right: 10%;
     padding-left: 10%;
-    color: #FFEFF1;
+    color: var(--almost-white);
+}
+.middle a:link{
+    text-decoration: none;
+    color: var(--almost-white);
+}
+.middle a:visited{
+    text-decoration: none;
+    color: var(--almost-white);
+}
+.middle a:hover{
+    text-decoration: underline;
+    color: var(--pink-highlighter);
+}
+.middle a:active{
+    text-decoration: underline;
+    color: var(--darkgrey-text);
 }
 .right{
     grid-area: pic;
-    background-color: #E2ABAC;
+    background-color: var(--title);
 }
+
 .bottom-footer{
     grid-area: bottom;
-}
-footer{
-    grid-area: bottom;
     text-align: center;
-    background-color: #FDCBD6;
+    background-color: var(--header-footer);
     padding: 20px;
-    color: #676767f7;
+    color: var(--darkgrey-text);
+    display: grid;
+    grid-template-areas: 
+        "upper upper upper"
+        "lower-left lower-middle lower-right";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+.upper-area{
+    grid-area: upper;
+}
+#up-to-top{
+    grid-area: lower-middle;
+}
+.references{
+    grid-area: lower-right;
+    font-family: KG I Want Crazy;
+}
+
 .links-socialnetworks ul{
     list-style-type: none;
     text-align: center;
@@ -152,11 +197,53 @@ footer{
     padding-right: 10px;
 }
 .links-socialnetworks a:link{
-    color:#847676;
+    color: var(--darkgrey-text);
 }
 .links-socialnetworks a:visited{
-    color:#847676;
+    color: var(--darkgrey-text);
 }
 .links-socialnetworks a:hover{
-    color:#f4859b;
+    color: var(--pink-highlighter);
+    text-decoration: underline;
+}
+.links-socialnetworks a:active{
+    color: var(--almost-white);
+    text-decoration: underline;
+}
+#up-to-top{
+    text-align: center;
+    font-family: KG I Want Crazy;
+}
+
+#up-to-top a:link{
+    color: var(--darkgrey-text);
+    text-decoration: none;
+}
+#up-to-top a:visited{
+    color: var(--darkgrey-text);
+    text-decoration: none;
+}
+#up-to-top a:hover{
+    color: var(--pink-highlighter);
+    text-decoration: underline;
+}
+#up-to-top a:active{
+    color: var(--almost-white);
+    text-decoration: underline;
+}
+.references a:link{
+    color: var(--darkgrey-text);
+    text-decoration: none;
+}
+.references a:visited{
+    color: var(--darkgrey-text);
+    text-decoration: none;
+}
+.references a:hover{
+    color: var(--pink-highlighter);
+    text-decoration: underline;
+}
+.references a:active{
+    color: var(--almost-white);
+    text-decoration: underline;
 }
