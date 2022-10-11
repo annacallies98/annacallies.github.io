@@ -163,7 +163,6 @@ header{
     grid-area: pic;
     background-color: var(--title);
 }
-
 .bottom-footer{
     grid-area: bottom;
     text-align: center;
@@ -187,7 +186,6 @@ header{
     grid-area: lower-right;
     font-family: KG I Want Crazy;
 }
-
 .links-socialnetworks ul{
     list-style-type: none;
     text-align: center;
