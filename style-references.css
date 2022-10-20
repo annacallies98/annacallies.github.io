@@ -39,7 +39,7 @@ body {
         "top"
         "title"
         "main"
-        "side"
+        /* "side" */
         "bottom";
     font-size: 16px;
 }
@@ -104,68 +104,11 @@ header{
     grid-area: main;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 300px;
+
 }
-    .main-content .aboutSD {
-        padding-bottom: 20px;
-    }
-        .main-content .aboutSD h2 {
-            font-family: KG I Want Crazy;
-            text-align: center;
-            font-size: 25px;
-            color: var(--title);
-        }
-.side-content {
-    grid-area: side;
-    /* nested grid */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "bunny bio pic";
-    grid-gap: 1px;
-}
-.left{
-    grid-area: bunny;
-    background-color: var(--title);
-}
-    .left .columnA{
-        margin-top: 10px;
-    }
-.middle{
-    grid-area: bio;
-    background-color: var(--title);
-    font-size: 30px;
-    line-height: 45px;
-    font-family: Playfair Display;
-    text-align: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10%;
-    padding-left: 10%;
-    color: var(--almost-white);
-}
-/* link in middle section - actions*/
-    .middle a:link{
-        text-decoration: none;
-        color: var(--almost-white);
-    }
-    .middle a:visited{
-        text-decoration: none;
-        color: var(--almost-white);
-    }
-    .middle a:hover{
-        text-decoration: underline;
-        color: var(--pink-highlighter);
-    }
-    .middle a:active{
-        text-decoration: underline;
-        color: var(--darkgrey-text);
-    }
-.right{
-    grid-area: pic;
-    background-color: var(--title);
-}
+
+
 .bottom-footer{
     grid-area: bottom;
     text-align: center;
