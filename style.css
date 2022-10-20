@@ -129,7 +129,9 @@ header{
     background-color: var(--title);
 }
     .left .columnA{
-        margin-top: 10px;
+        margin-top: 10px;    
+        justify-content: center;
+
     }
 .middle{
     grid-area: bio;
