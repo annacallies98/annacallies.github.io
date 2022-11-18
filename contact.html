@@ -3,16 +3,20 @@
     <head>
         <!-- 152-112 Web Coding Technologies
             Anna Callies
-            Assessment Info: LP2: Basic Home Page
-            Date: 09/22/2022
+            Assessment Info: LP5: Contact Form
+            Date: 11/17/2022
             File Name: annacallies-website  -->
-        <title>Anna Callies</title>
+        <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <meta name="keywords" content="Anna, Callies, Creativity, HTML, CSS">
-        <meta name="description" content="This is the homepage for Anna Callies Creativity.">
+        <meta name="keywords" content="Anna, Callies, Creativity, HTML, CSS, contact, me, form, ">
+        <meta name="description" content="This is the contact page for Anna Callies Creativity.">
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-contact.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
         <div>
         <!-- Link for Font Awesome icons -->
             <!-- 6.2.0 -->
@@ -39,62 +43,59 @@
             <!-- navigation bar -->
             <nav class="navigation">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Resources</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Welcome message -->
-        <div class="title">
-            <h1 class="welcome">Welcome</h1>
-            <div class="welcome-message">
-                <p>Welcome to my personal website! Thank you for stopping by! Here, you'll find information about me, my projects, services, resume, and portfolio.</p>
-            </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            <p>* = required</p>
+            <form class="contact-form" action="contact.php" method="post">
+                <div id="firstname">
+                    <label class="label" for="firstname">* First Name</label><br>
+                    <input class="field" type="text" name="firstname" placeholder="First Name" value="" size="45" required><br>
+                </div>
+                <div id="lastname">
+                    <label class="label" for="lastname">* Last Name</label><br>
+                    <input class="field" type="text" name="lastname" placeholder="Last Name" value="" size="45" required><br>
+                </div>
+                <div id="phone">
+                    <label class="label" for="phone">Phone Number</label><br>
+                    <input class="field" type="tel" name="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" size="45"><br>
+                    <span class="validity"></span>
+                </div>
+                <div id="email">
+                    <label class="label" for="email">* Email</label><br>
+                    <input class="field" type="email" name="email" placeholder="example@email.com" value="" size="45" required><br>
+                </div>
+                <div id="subject">
+                    <label class="label" for="subject">Subject</label><br>
+                    <input class="field" type="text" name="subject" placeholder="Subject" value="" size="75"><br>
+                </div>
+                <div id="message">
+                    <label class="label" for="message">* Message</label><br>
+                    <textarea class="field" name="message" cols="60" rows="5" placeholder="Message" required></textarea><br>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
         </div>
-
-        <!-- main body of code -->
-        <main class="main-content">
-            <!-- HTML image -->
-            <img src="images/html.png" alt="image of html tag" style="float:top; width:400px; height:auto; margin-left:auto; margin-right:auto; padding-bottom:20px; display:block;">
-            <!-- Follow Me as I Learn HTML and CSS -->
-            <div class="aboutSD">
-                <h2>Follow Me as I Learn HTML and CSS</h2>
-                <p>My software development journey formally begins at <span style="color: #f4859b">Moraine Park Technical College</span>, where I learn a diverse set of Information Technology skills. I also have taken a <span style="color: #f4859b">Software Development Bootcamp</span> through UW Madison and a <span style="color:#f4859b">Python 3 Programming Course</span> through the Bridges Library System, both of which I have gained many technical skills. I am now in the first semester of my second program at MPTC (see About for my whole story), where I am enjoying a complete online-learning experience. I am currently learning about programming in Java, relational databases, fundamentals in the IT world, and coding in HTML and CSS. Watch as I learn and grow as a software developer!</p>
-            </div>
-        </main>
-
-        <aside class="side-content">
-            <!-- image gallery -->
-                <div class="left">
-                    <!-- Candy -->
-                    <div class="columnA">
-                        <img src="images/Candy.jpeg" alt="gray and white rabbit" width="175px;">
-                    </div>
-                    <!-- Candy & Cupcake -->
-                    <div class="columnB">
-                        <img src="images/CandyCupcake.jpeg" alt="two cute bunnies" width="175px;">
-                    </div>
-                    <!-- Cupcake -->
-                    <div class="columnC">
-                        <img src="images/Cupcake.jpeg" alt="brown and white rabbit" width="175px;">
-                    </div>
-                </div>
-                <!-- text column -->
-                <div class="middle">
-                    <p>Meet me, and my bunnies, Candy and Cupcake! Click <a href="#">About</a> for more information:)</p>
-                </div>
-                <!-- Anna -->
-                <div class="right">
-                    <img src="images/AnnaCallies.png" alt="image of Anna Callies" style="width: 300px; margin-right:auto; margin-left:auto; display:block">
-                </div>
-        </aside>
+        <div id="left">
+        </div>
+        <div id="right">
+            <!-- <img id="picture" src="images/photo-gallery/AnnaCallies05.jpeg" alt="picture of Anna Callies"> -->
+        </div>
+       
+        
         <hr>
         <footer class="bottom-footer">
             <div class="upper-area">
@@ -162,22 +163,11 @@
             <div id="up-to-top">
                 <a href="#top">top of page</a>
             </div>
+            <div id="css-validator">
+                <a target="_blank" href="https://jigsaw.w3.org/css-validator/">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+                </a>    
+            </div>
         </footer>
     </body>
 </html>
-
-
-<!-- 
-    bunny banner
-    https://www.freepik.com/premium-vector/draw-banner-cute-bunny-easter-spring_24279556.htm  
-    by anchaleear
-
-    HTML image
-    https://www.google.com/url?sa=i&url=https%3A%2F%2Fhappycoding.io%2Ftutorials%2Fhtml%2F&psig=AOvVaw369Vr_b3_9j7gg7kBsKapD&ust=1663905791795000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDS-qDCp_oCFQAAAAAdAAAAABAD
-    https://happycoding.io/tutorials/html/
-
-    icon 1 - 16:
-    https://www.flaticon.com/free-icon/rabbit_7072016?term=rabbit&page=1&position=34&page=1&position=34&related_id=7072016
-    by Dimas Anom 
-    <a href="https://www.flaticon.com/free-icons/rabbit" title="rabbit icons">Rabbit icons created by Dimas Anom - Flaticon</a>
--->

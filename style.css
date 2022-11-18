@@ -50,7 +50,6 @@ header{
     background-image: url(images/bunnybanner.jpeg);
     height: 250px;
     background-color: var(--header-footer);
-    /* header image from: https://www.freepik.com/premium-vector/draw-banner-cute-bunny-easter-spring_24279556.htm  by anchaleear*/
 }
 .image-logo{
     display: block;

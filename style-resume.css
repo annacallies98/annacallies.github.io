@@ -19,7 +19,6 @@
     font-family: HeroLight;
     src: url(fonts/HelveticaNeue-UltraLight.otf);    
     font-family: Helvetica Neue Ultra Light;
-   
 }
 :root{
     --background: #FFEFF1;
@@ -48,7 +47,6 @@ body {
         "top top"
         "main side"
         "bottom bottom";
-    
 }
 .top-header{
     grid-area: top;
@@ -57,7 +55,6 @@ header{
     background-image: url(images/bunnybanner.jpeg);
     height: 250px;
     background-color: var(--header-footer);
-    /* header image from: https://www.freepik.com/premium-vector/draw-banner-cute-bunny-easter-spring_24279556.htm  by anchaleear*/
 }
 .image-logo{
     display: block;
@@ -439,8 +436,6 @@ header{
     padding: 20px;
     }
 
-
-
 /* resume sidebar (right) */
 #resume-sidebar{
     flex-shrink: 0;
@@ -576,12 +571,6 @@ h4{
     text-align: center;
     color: var(--almost-white);
 }
-
-
-
-
-
-
 .bottom-footer{
     grid-area: bottom;
     text-align: center;
@@ -677,7 +666,7 @@ h4{
         text-decoration: underline;
     }
 #css-validator p{
-    /* grid-area: lower-left; */
+    grid-area: lower-left;
     display: block;
     justify-content: center;
     align-items: center;
