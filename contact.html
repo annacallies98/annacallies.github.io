@@ -3,171 +3,240 @@
     <head>
         <!-- 152-112 Web Coding Technologies
             Anna Callies
-            Assessment Info: LP5: Contact Form
-            Date: 11/17/2022
-            File Name: annacallies-website  -->
+            Assessment Info: LP6: Final Project
+            Date: 12/16/22
+            File Name: FinalProject-WebCodingTechnologies  -->
         <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="keywords" content="Anna, Callies, Creativity, HTML, CSS, contact, me, form, ">
         <meta name="description" content="This is the contact page for Anna Callies Creativity.">
-
-        <link rel="stylesheet" href="style-contact.css">
-
+        <link rel="stylesheet" href="styles/style.css">
+        <!-- Font Links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
-        <div>
         <!-- Link for Font Awesome icons -->
-            <!-- 6.2.0 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 6.0.0 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 6.1.2 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 5.8.2 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 5.8.1 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 5.0.0 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-        </div>
+        <!-- 6.2.0 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 6.0.0 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 6.1.2 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 5.8.2 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 5.8.1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 5.0.0 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     </head>
 
-    <body class="site">
-        <!-- header -->
-        <header class="top-header">
+<body id="site">
+    <!-- header -->
+    <header class="top-header" style="background-image: url(images/background/bunnybanner.jpeg)">
+        <div>
+            <img class="image-logo" src="images/logos/Logo.png" alt="official Anna Callies Creativity logo">
+        </div>
+        <!-- navigation bar -->
+        <nav class="full-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="webography.html">Resources</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div id="contact">
+    <h1>Contact</h1>
+    <p>* = required</p>
+    <form class="contact-form" action="scripts/extraformmail.php" method="post">
+        <div >
+            <label class="label" for="firstname">* First Name</label><br>
+            <input class="field" type="text" name="firstname" placeholder="First Name" value="" size="45" required id="firstname"><br>
+        </div>
+        <div>
+            <label class="label" for="lastname">* Last Name</label><br>
+            <input class="field" type="text" name="lastname" placeholder="Last Name" value="" size="45" required id="lastname"><br>
+        </div>
+        <div>
+            <label class="label" for="phone">Phone Number</label><br>
+            <input class="field" type="tel" name="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" size="45" id="phone"><br>
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label class="label" for="email">* Email</label><br>
+            <input class="field" type="email" name="email" placeholder="example@email.com" value="" size="45" required id="email"><br>
+        </div>
+        <div>
+            <label class="label" for="subject">Subject</label><br>
+            <input class="field" type="text" name="subject" placeholder="Subject" value="" size="75" id="subject"><br>
+        </div>
+        <div>
+            <label class="label" for="message">* Message</label><br>
+            <textarea class="field" name="message" cols="60" rows="5" placeholder="Message" required id="message"></textarea><br>
+        </div>
+        <div id="survey-besttimes">
+            <h2 class="label">What are the best time(s) to reach you?</h2>
             <div>
-                <img class="image-logo" src="logos/Logo.png" alt="official Anna Callies Creativity logo" width="300px">
+                <input class="survey-times" name="time-answer8am" type="checkbox" value="8:00am">
+                <label for="time-answer8am">8:00am</label><br>
+                <input class="survey-times" name="time-answer9am" type="checkbox" value="9:00am">
+                <label for="time-answer9am">9:00am</label><br>
+                <input class="survey-times" name="time-answer10am" type="checkbox" value="10:00am">
+                <label for="time-answer10am">10:00am</label><br>
+                <input class="survey-times" name="time-answer11am" type="checkbox" value="11:00am">
+                <label for="time-answer11am">11:00am</label><br>
+                <input class="survey-times" name="time-answer12pm" type="checkbox" value="12:00pm">
+                <label for="time-answer12pm">12:00pm</label><br>
+                <input class="survey-times" name="time-answer1pm" type="checkbox" value="1:00pm">
+                <label for="time-answer1pm">1:00pm</label><br>
+                <input class="survey-times" name="time-answer2pm" type="checkbox" value="2:00pm">
+                <label for="time-answer2pm">2:00pm</label><br>
+                <input class="survey-times" name="time-answer3pm" type="checkbox" value="3:00pm">
+                <label for="time-answer3pm">3:00pm</label><br>
+                <input class="survey-times" name="time-answer4pm" type="checkbox" value="4:00pm">
+                <label for="time-answer4pm">4:00pm</label><br>
+                <input class="survey-times" name="time-answer5pm" type="checkbox" value="5:00pm">
+                <label for="time-answer5pm">5:00pm</label><br>
+                <input class="survey-times" name="time-answer6pm" type="checkbox" value="6:00pm">
+                <label for="time-answer6pm">6:00pm</label><br>
+                <input class="survey-times" name="time-answer7pm" type="checkbox" value="7:00pm">
+                <label for="time-answer7pm">7:00pm</label><br>
+                <input class="survey-times" name="time-answer8pm" type="checkbox" value="8:00pm">
+                <label for="time-answer8pm">8:00pm</label><br>
             </div>
-            <!-- navigation bar -->
-            <nav class="navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div id="contact">
-            <h1>Contact</h1>
-            <p>* = required</p>
-            <form class="contact-form" action="contact.php" method="post">
-                <div id="firstname">
-                    <label class="label" for="firstname">* First Name</label><br>
-                    <input class="field" type="text" name="firstname" placeholder="First Name" value="" size="45" required><br>
-                </div>
-                <div id="lastname">
-                    <label class="label" for="lastname">* Last Name</label><br>
-                    <input class="field" type="text" name="lastname" placeholder="Last Name" value="" size="45" required><br>
-                </div>
-                <div id="phone">
-                    <label class="label" for="phone">Phone Number</label><br>
-                    <input class="field" type="tel" name="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" size="45"><br>
-                    <span class="validity"></span>
-                </div>
-                <div id="email">
-                    <label class="label" for="email">* Email</label><br>
-                    <input class="field" type="email" name="email" placeholder="example@email.com" value="" size="45" required><br>
-                </div>
-                <div id="subject">
-                    <label class="label" for="subject">Subject</label><br>
-                    <input class="field" type="text" name="subject" placeholder="Subject" value="" size="75"><br>
-                </div>
-                <div id="message">
-                    <label class="label" for="message">* Message</label><br>
-                    <textarea class="field" name="message" cols="60" rows="5" placeholder="Message" required></textarea><br>
-                </div>
-                <div id="submit">
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
         </div>
-        <div id="left">
+        <div class="survey-mailingList">
+            <h2 class="label">Are you interested in joining our mailing list?</h2>
+            <input id="answer-yes" name="mailing-answerYes" type="radio" value="Yes">
+            <label for="mailing-answerYes">Yes</label>
+            <input id="answer-no" name="mailing-answerNo" type="radio" value="No">
+            <label for="mailing-answerNo">No</label>
         </div>
-        <div id="right">
-            <!-- <img id="picture" src="images/photo-gallery/AnnaCallies05.jpeg" alt="picture of Anna Callies"> -->
+        <div class="survey-rating">
+            <h2 class="label">Rate my website</h2>
+            <div id="select">
+                <select name="rating">
+                    <option value="">select one:</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Poor">Poor</option>
+                </select>
+            </div>
         </div>
-       
-        
-        <hr>
-        <footer class="bottom-footer">
-            <div class="upper-area">
-            <div class="links-socialnetworks">
-                <ul>
-                    <!-- facebook -->
-                    <li><a target="_blank" href="https://www.facebook.com/annacallies98/"><i class="fa-brands fa-facebook-f"> @annacalllies98 </i></a>  </li>
-                    <!-- twitter -->
-                    <li> <a target="_blank" href="https://twitter.com/annacallies98"><i class="fa-brands fa-twitter"> @annacallies98 </i></a></li>
-                    <!-- instagram -->
-                    <li><a target="_blank" href="https://www.instagram.com/annacallies/"><i class="fa-brands fa-square-instagram"> @annacallies </i></a></li>
-                    <!-- linkedin -->
-                    <li><a target="_blank" href="https://www.linkedin.com/in/annacallies98/"><i class="fa-brands fa-linkedin-in"> @annacallies98 </i></a></li>
-                    <!-- youtube -->
-                    <li><a target="_blank" href="https://www.youtube.com/channel/UCvaEscePYwTNMnP4uagm8lQ"><i class="fa-brands fa-youtube"> Anna Callies </i></a></li>
-                    <!-- github -->
-                    <li><a target="_blank" href="https://github.com/annacallies98"><i class="fa-brands fa-github"> @annacallies98 </i></a></li>
-                    <!-- discord -->
-                    <li><a target="_blank" href="https://discordapp.com/users/931042069370257438"><i class="fa-brands fa-discord"> Anna9821#2528 </i></a></li>
-                </ul>
-            </div>
-            <p>
-                <!-- icon 1 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px;">
-                <!-- icon 2 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 3 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 4 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 5 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 6 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 7 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 8 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-
-                <!-- copyright texts -->
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script>. All rights reserved.
-
-                <!-- icon 9 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 10 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 11 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 12 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 13 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 14 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 15 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 16 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-left:5px; transform: scaleX(-1);">
-                </p>
-            </div>
-            <div class="references">
-                <a href="references.html">references for this website</a>
-            </div>
-            <div id="up-to-top">
-                <a href="#top">top of page</a>
-            </div>
-            <div id="css-validator">
-                <a target="_blank" href="https://jigsaw.w3.org/css-validator/">
-                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-                </a>    
-            </div>
-        </footer>
-    </body>
+        <div id="table-rating">
+            <table>
+                <tr>
+                    <th>Rating</th>
+                    <th>Definition</th>
+                </tr>
+                <tr>
+                    <td>Excellent</td>
+                    <td>Of the highest or finest quality; exceptionally good for its kind.</td>
+                </tr>
+                <tr>
+                    <td>Good</td>
+                    <td>Being positive or desirable in nature, not bad or poor.</td>
+                </tr>
+                <tr>
+                    <td>Fair</td>
+                    <td>Of pleasing appearance, especially because of a pure or fresh quality.</td>
+                </tr>
+                <tr>
+                    <td>Poor</td>
+                    <td>Not adequate in quality or quantity, inferior.</td>
+                </tr>
+            </table>
+        </div>
+        <div id="submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+<div id="left">
+    <!-- <img class="picture" src="images/AnnaCallies04.jpeg" alt="glitter purple background"> -->
+</div>
+<div id="right">
+    <!-- <img class="picture" src="images/AnnaCallies11.jpeg" alt="picture of Anna Callies"> -->
+</div>
+<hr>
+<footer class="bottom-footer">
+	<div class="upper-area">
+		<div class="links-socialnetworks">
+			<ul>
+				<!-- facebook -->
+				<li><a href="https://www.facebook.com/annacallies98/" target="_blank"><i class="fa-brands fa-facebook-f">@annacalllies98</i></a></li>
+				<!-- twitter -->
+				<li><a href="https://twitter.com/annacallies98" target="_blank"><i class="fa-brands fa-twitter">@annacallies98</i></a></li>
+				<!-- instagram -->
+				<li><a href="https://www.instagram.com/annacallies/" target="_blank"><i class="fa-brands fa-square-instagram">@annacallies</i></a></li>
+				<!-- linkedin -->
+				<li><a href="https://www.linkedin.com/in/annacallies98/" target="_blank"><i class="fa-brands fa-linkedin-in">@annacallies98</i></a></li>
+				<!-- youtube -->
+				<li><a href="https://www.youtube.com/channel/UCvaEscePYwTNMnP4uagm8lQ" target="_blank"><i class="fa-brands fa-youtube">Anna Callies</i></a></li>
+				<!-- github -->
+				<li><a href="https://github.com/annacallies98" target="_blank"><i class="fa-brands fa-github">@annacallies98</i></a></li>
+				<!-- discord -->
+				<li><a href="https://discordapp.com/users/931042069370257438" target="_blank"><i class="fa-brands fa-discord">Anna9821#2528</i></a></li>
+			</ul>
+		</div>
+		<p>
+			<!-- icon 1 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px;">
+			<!-- icon 2 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 3 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 4 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 5 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 6 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 7 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 8 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- copyright texts -->
+			Copyright &copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>.
+			All rights reserved.
+			<!-- icon 9 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 10 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 11 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 12 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 13 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 14 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 15 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 16 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-left:5px; transform: scaleX(-1);">
+		</p>
+	</div>
+	<div class="references">
+		<a href="references.html">references for this website</a>
+	</div>
+	<div id="up-to-top">
+		<a href="#top">top of page</a>
+	</div>
+	<div id="css-validator">
+		<a target="_blank" href="https://jigsaw.w3.org/css-validator/"> <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>
+	</div>
+</footer>
+</body>
 </html>

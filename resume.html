@@ -3,295 +3,285 @@
     <head>
         <!-- 152-112 Web Coding Technologies
             Anna Callies
-            Assessment Info: LP4: Resume
-            Date: 10/19/2022
-            File Name: annacallies-website  -->
+            Assessment Info: LP6: Final Project
+            Date: 12/16/22
+            File Name: FinalProject-WebCodingTechnologies  -->
         <title>Resume</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="keywords" content="Anna, Callies, Creativity, HTML, CSS, resume">
         <meta name="description" content="This is the resume page for Anna Callies Creativity.">
-
-        <link rel="stylesheet" href="style-resume.css">
-
+        <link rel="stylesheet" href="styles/style.css">
+        <!-- Font Links -->
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
-        <div>
         <!-- Link for Font Awesome icons -->
-            <!-- 6.2.0 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 6.0.0 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 6.1.2 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 5.8.2 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 5.8.1 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-            <!-- 5.0.0 -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-        </div>
+        <!-- 6.2.0 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 6.0.0 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 6.1.2 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 5.8.2 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 5.8.1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <!-- 5.0.0 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     </head>
 
-    <body class="site">
-        <!-- header -->
-        <header class="top-header">
-            <div>
-                <img class="image-logo" src="logos/Logo.png" alt="official Anna Callies Creativity logo" width="300px">
-            </div>
-            <!-- navigation bar -->
-            <nav class="navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="resume">
-            <main id="resume-main">
-                <h1>Resume</h1>
-                <div id="objective">
-                    <p>Dedicated, driven, and devoted software developer ready to learn and grow in the technology industry. An active leader that can communicate with team members and customers with confidence and honesty. Looking to expand my skills and experience. Also a passionate and experienced cosmetologist with excellent client retention that always treats people with respect.</p>
-                </div>
-                <div id="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>Swift</li>
-                        <li>Git and Github</li>
-                        <li>GitKraken</li>
-                        <li>XCode, Eclipse, Visual Studio Code, PyCharm</li>
-                        <li>Microsoft Office: Word, Excel, PowerPoint, OneDrive, OneNote</li>
-                        <li>Skype, Zoom, Microsoft Teams</li>
-                        <li>Adobe Photoshop, Illustrator, InDesign, Acrobat, Premiere Pro, </li>
-                        <li>Handbrake, iMovie, Audacity, </li>
-                        <li>macOS, iPadOS, iOS</li>
-                    </ul>
-                </div>
-                <h2 class="employment-title">Employment Experience</h2>
-                <div id="employment">
-                    <div id="employment6">
-                        <p id="employment6-heading"><strong>Healing Elements Day Spa - Cosmetologist</strong></p>
-                        <p id="employment6-location"><strong>West Bend, WI</strong></p>
-                        <p id="employment6-dates"><strong>October 2021 - current</strong></p>
-                        <p id="employment6-description">Administered hair, skin, and nail services to clients. Performed haircuts, color, and chemical services, shampooing, and styling. Performed facial services including facial waxing and massage. Performed manicures, pedicures, and massage to lower legs. Managed appointment schedules, client notes, and service protocols.</p>
-                    </div>
-                    <div id="employment5">
-                        <p id="employment5-heading"><strong>Supercuts, Signature Two Company - Hairstylist</strong></p>
-                        <p id="employment5-location"><strong>Germantown & Menomonee Falls, WI</strong></p>
-                        <p id="employment5-dates"><strong>November 2020 - July 2021</strong></p>
-                        <p id="employment5-description">Examine hair and skin. Performed haircuts, color and chemical services, shampooing, facial waxing, and styling services. Create and maintain a clean and professional salon environment by completing cleaning and sanitation processes. Provide quick, accurate customer service. Scheduled clients, recorded notes, and kept inventory. </p>
-                    </div>
-                    <div id="employment4">
-                        <p id="employment4-heading"><strong>Weasler Engineering - 5S Employee</strong></p>
-                        <p id="employment4-location"><strong>West Bend, WI</strong></p>
-                        <p id="employment4-dates"><strong>June 2017 - August 2017</strong></p>
-                        <p id="employment4-description">Responsible for transforming the facility into a world-class factory by using the 5S&#39s: <em>sorting</em> items and removing unnecessary items from each area so that I could <em>set</em> in order items for easy access, <em>shining</em> (deep cleaning machines and other items) and cleaning/inspecting each area regularly, <em>standardizing</em> operating procedures and safety standards (laying down safety tape), and <em>sustaining</em> the cleanliness status of each area that I cleaned.  Completing cleaning, painting and organizational duties that developed consistent sanitation practices. </p>
-                    </div>
-                    <div id="employment3">
-                        <p id="employment3-heading"><strong>Cedarburg Popcorn Company - Cashier/Customer Service</strong></p>
-                        <p id="employment3-location"><strong>Cedarburg, WI</strong></p>
-                        <p id="employment3-dates"><strong>September 2016 - June 2017</strong></p>
-                        <p id="employment3-description">Completing various cleaning and general maintenance tasks/activities. Respectfully providing exceptional customer service to all patrons. Answering any questions and providing assistance.</p>
-                    </div>
-                    <div id="employment2">
-                        <p id="employment2-heading"><strong>Mills Fleet Farm - Cashier/Garden Center Clerk</strong></p>
-                        <p id="employment2-location"><strong>West Bend, WI</strong></p>
-                        <p id="employment2-dates"><strong>March 2016 - August 2016</strong></p>
-                        <p id="employment2-description">Working individually and as a team to provide customer service. Answering all questions and assisting customers. Obtained and shared product knowledge to assist customers in making purchases. Scanning all items, collecting payments and giving back proper change amounts.</p>
-                    </div>
-                    <div id="employment1">
-                        <p id="employment1-heading"><strong>Kettle Moraine YMCA - YMCA Lifeguard</strong></p>
-                        <p id="employment1-location"><strong>West Bend, WI</strong></p>
-                        <p id="employment1-dates"><strong>December 2014 - September 2015</strong></p>
-                        <p id="employment1-description">Provided safety services to patrons by scanning swimming areas, greeting and providing information and services, cleaning, general maintenance, and management of the pool areas. Trained and earned Lifeguarding, First Aid, CPR, AED, Emergency Oxygen, and YMCA Lifeguarding certification. Provided emergency care when needed in a safe and professional manner, and also trained swimming students on safe and effective techniques.</p>
-                        
-                    </div>
-                </div>                    
-                <h2>Education</h2>
-                <div id="education">
-                    <div id="education5">
-                        <p id="education5-heading"><strong>Moraine Park Technical College - IT Software Development</strong></p>
-                        <p id="education5-location"><strong>Online</strong></p>
-                        <p id="education5-dates"><strong>August 2022 - current</strong></p>
-                        <ul id="education5-description">
-                            <li>A member of the IT club.</li>
-                        </ul>
-                    </div>
-                    <div id="education4">
-                        <p id="education4-heading"><strong>Moraine Park Technical College - Cosmetology</strong></p>
-                        <p id="education4-location"><strong>Fond du Lac, WI</strong></p>
-                        <p id="education4-dates"><strong>June 2019 - October 2020</strong></p>
-                        <ul id="education4-description">
-                            <li><em>Graduated October 19, 2020</em></li>
-                            <li>Was a member of MPTC Student Senate and the Cosmetology Club | Dean's List Summer 2019 | 3.3 GPA</li>
-                        </ul>
-                    </div>
-                    <div id="education3">
-                        <p id="education3-heading"><strong>Aveda Institue of Beauty & Wellness</strong></p>
-                        <p id="education3-location"><strong>Milwaukee, WI</strong></p>
-                        <p id="education3-dates"><strong>September 2018 - March 2019</strong></p>
-                        <ul id="education3-description">
-                            <li><em>No degree obtained</em></li>
-                            <li>Overall grade of 95% | average attendance of 90%</li>
-                        </ul>
-                    </div>
-                    <div id="education2">
-                        <p id="education2-heading"><strong>University of Wisconsin Whitewater</strong></p>
-                        <p id="education2-location"><strong>Whitewater, WI</strong></p>
-                        <p id="education2-dates"><strong>September 2017 - February 2018</strong></p>
-                        <ul id="education2-description">
-                            <li><em>Completed general classes towards business degree. No degree obtained</em></li>
-                            <li>DECA Member | 3.2 GPA</li>
-                        </ul>
-                    </div>
-                    <div id="education1">
-                        <p id="education1-heading"><strong>Slinger High School</strong></p>
-                        <p id="education1-location"><strong>Slinger, WI</strong></p>
-                        <p id="education1-dates"><strong>September 2013 - June 2017</strong></p>
-                        <ul id="education1-description">
-                            <li><em>Graduated with Honors 2017</em></li>
-                            <li>DECA, FCA (Fellowship of Christian Athletes), Cheerleading, Dance, and Musical Member | National Honor Society Member, May 2017 | 3.58 GPA</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="awardscertifications">
-                    <h2>Awards & Certifications</h2>
-                    <p id="WI-Cosmetology"><strong>Wisconsin Cosmetology State Board Exams [Written & Practical]</strong></p>
-                    <ul>
-                        <li>Written: Dec 22, 2019 (95%)</li>
-                        <li>Practical: Jan 19, 2020 (98%)</li>
-                    </ul>
-                </div>
-                
-
-
-            </main>
-            <aside id="resume-sidebar">
-                <img id="headshot" src="images/headshot-AnnaCallies.jpeg" alt="head shot of Anna Callies">
-                <h1>Anna Callies</h1>
-                <div id="contact-info">
-                    <p>Menomonee Falls, Wisconsin</p>
-                    <p>262-444-9995</p>
-                    <p>annacallies98@gmail.com</p>
-                    <p>acallies4@student.morainepark.edu (student email)</p> 
-                </div>
-                
-                <div id="job-title">
-                    <h4>Software Developer</h4>
-                </div>
-                <h3>Personal Interests</h3>
-                <ul id="personal-interests">
-                    <li>Beauty - doing hair, nails, and skincare services.</li>
-                    <li>Video Games - Animal Crossing.</li>
-                    <li>Art and Crafts - drawing, painting, crocheting, scrapbooking, sewing, etc.</li>
-                    <li>Design - video editing, designing flyers, websites, programs, etc.</li>
-                    <li>Bunnies - taking care of my pet bunnies, holding them, petting and playing with them.</li>
-                </ul>
-                <h3>Photo Gallery</h3>
-                <div id="photo-gallery">
-                    <img id="photo1" src="images/photo-gallery/AnnaCallies08.jpeg" alt="photo of Anna Callies">
-                    <img id="photo2" src="images/photo-gallery/CandyCupcake01.jpeg" alt="photo of two cute bunnies">
-                    <img id="photo3" src="images/photo-gallery/AnnaCallies03.jpeg" alt="photo of Anna Callies">
-                    <img id="photo4" src="images/photo-gallery/Cupcake03.jpeg" alt="photo of a holland lop rabbit laying in a cardboard box">
-                    <img id="photo5" src="images/photo-gallery/AnnaCallies01.jpeg" alt="photo of Anna Callies">
-                    <img id="photo6" src="images/photo-gallery/Candy01.jpeg" alt="photo of a holland lop rabbit">
-                    <img id="photo7" src="images/photo-gallery/AnnaCallies05.jpeg" alt="photo of Anna Callies">
-                    <img id="photo8" src="images/photo-gallery/Cupcake02.jpeg" alt="photo of a holland lop rabbit and a baby chicken">
-                    <img id="photo9" src="images/photo-gallery/AnnaCallies02.jpeg" alt="photo of Anna Callies">
-                    <img id="photo10" src="images/photo-gallery/Candy02.jpeg" alt="photo of holland lop rabbit on a fluffy pillow">
-                    <img id="photo11" src="images/photo-gallery/AnnaCallies04.jpeg" alt="photo of Anna Callies">
-                </div>
-
-            </aside>
-            
-            
+<body class="site">
+    <!-- header -->
+    <header class="top-header" style="background-image: url(images/background/bunnybanner.jpeg)">
+        <div>
+            <img class="image-logo" src="images/logos/Logo.png" alt="official Anna Callies Creativity logo">
         </div>
-        
-        
-        <hr>
-        <footer class="bottom-footer">
-            <div class="upper-area">
-            <div class="links-socialnetworks">
-                <ul>
-                    <!-- facebook -->
-                    <li><a target="_blank" href="https://www.facebook.com/annacallies98/"><i class="fa-brands fa-facebook-f"> @annacalllies98 </i></a>  </li>
-                    <!-- twitter -->
-                    <li> <a target="_blank" href="https://twitter.com/annacallies98"><i class="fa-brands fa-twitter"> @annacallies98 </i></a></li>
-                    <!-- instagram -->
-                    <li><a target="_blank" href="https://www.instagram.com/annacallies/"><i class="fa-brands fa-square-instagram"> @annacallies </i></a></li>
-                    <!-- linkedin -->
-                    <li><a target="_blank" href="https://www.linkedin.com/in/annacallies98/"><i class="fa-brands fa-linkedin-in"> @annacallies98 </i></a></li>
-                    <!-- youtube -->
-                    <li><a target="_blank" href="https://www.youtube.com/channel/UCvaEscePYwTNMnP4uagm8lQ"><i class="fa-brands fa-youtube"> Anna Callies </i></a></li>
-                    <!-- github -->
-                    <li><a target="_blank" href="https://github.com/annacallies98"><i class="fa-brands fa-github"> @annacallies98 </i></a></li>
-                    <!-- discord -->
-                    <li><a target="_blank" href="https://discordapp.com/users/931042069370257438"><i class="fa-brands fa-discord"> Anna9821#2528 </i></a></li>
+        <!-- navigation bar -->
+        <nav class="full-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="webography.html">Resources</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<div id="resume">
+    <main id="resume-main">
+        <h1>Resume</h1>
+        <div id="objective">
+            <p>Dedicated, driven, and devoted software developer ready to learn and grow in the technology industry. An active leader that can communicate with team members and customers with confidence and honesty. Looking to expand my skills and experience. Also a passionate and experienced cosmetologist with excellent client retention that always treats people with respect.</p>
+        </div>
+        <div id="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Swift</li>
+                <li>Git and Github</li>
+                <li>GitKraken</li>
+                <li>XCode, Eclipse, Visual Studio Code, PyCharm</li>
+                <li>Microsoft Office: Word, Excel, PowerPoint, OneDrive, OneNote</li>
+                <li>Skype, Zoom, Microsoft Teams</li>
+                <li>Adobe Photoshop, Illustrator, InDesign, Acrobat, Premiere Pro, </li>
+                <li>Handbrake, iMovie, Audacity, </li>
+                <li>macOS, iPadOS, iOS</li>
+            </ul>
+        </div>
+        <h3 class="employment-title">Employment Experience</h3>
+        <div id="employment">
+            <div id="employment6">
+                <p id="employment6-heading"><strong>Healing Elements Day Spa - Cosmetologist</strong></p>
+                <p id="employment6-location"><strong>West Bend, WI</strong></p>
+                <p id="employment6-dates"><strong>October 2021 - current</strong></p>
+                <p id="employment6-description">Administered hair, skin, and nail services to clients. Performed haircuts, color, and chemical services, shampooing, and styling. Performed facial services including facial waxing and massage. Performed manicures, pedicures, and massage to lower legs. Managed appointment schedules, client notes, and service protocols.</p>
+            </div>
+            <div id="employment5">
+                <p id="employment5-heading"><strong>Supercuts, Signature Two Company - Hairstylist</strong></p>
+                <p id="employment5-location"><strong>Germantown & Menomonee Falls, WI</strong></p>
+                <p id="employment5-dates"><strong>November 2020 - July 2021</strong></p>
+                <p id="employment5-description">Examine hair and skin. Performed haircuts, color and chemical services, shampooing, facial waxing, and styling services. Create and maintain a clean and professional salon environment by completing cleaning and sanitation processes. Provide quick, accurate customer service. Scheduled clients, recorded notes, and kept inventory. </p>
+            </div>
+            <div id="employment4">
+                <p id="employment4-heading"><strong>Weasler Engineering - 5S Employee</strong></p>
+                <p id="employment4-location"><strong>West Bend, WI</strong></p>
+                <p id="employment4-dates"><strong>June 2017 - August 2017</strong></p>
+                <p id="employment4-description">Responsible for transforming the facility into a world-class factory by using the 5S&lsquo;s: <em>sorting</em> items and removing unnecessary items from each area so that I could <em>set</em> in order items for easy access, <em>shining</em> (deep cleaning machines and other items) and cleaning/inspecting each area regularly, <em>standardizing</em> operating procedures and safety standards (laying down safety tape), and <em>sustaining</em> the cleanliness status of each area that I cleaned.  Completing cleaning, painting and organizational duties that developed consistent sanitation practices. </p>
+            </div>
+            <div id="employment3">
+                <p id="employment3-heading"><strong>Cedarburg Popcorn Company - Cashier/Customer Service</strong></p>
+                <p id="employment3-location"><strong>Cedarburg, WI</strong></p>
+                <p id="employment3-dates"><strong>September 2016 - June 2017</strong></p>
+                <p id="employment3-description">Completing various cleaning and general maintenance tasks/activities. Respectfully providing exceptional customer service to all patrons. Answering any questions and providing assistance.</p>
+            </div>
+            <div id="employment2">
+                <p id="employment2-heading"><strong>Mills Fleet Farm - Cashier/Garden Center Clerk</strong></p>
+                <p id="employment2-location"><strong>West Bend, WI</strong></p>
+                <p id="employment2-dates"><strong>March 2016 - August 2016</strong></p>
+                <p id="employment2-description">Working individually and as a team to provide customer service. Answering all questions and assisting customers. Obtained and shared product knowledge to assist customers in making purchases. Scanning all items, collecting payments and giving back proper change amounts.</p>
+            </div>
+            <div id="employment1">
+                <p id="employment1-heading"><strong>Kettle Moraine YMCA - YMCA Lifeguard</strong></p>
+                <p id="employment1-location"><strong>West Bend, WI</strong></p>
+                <p id="employment1-dates"><strong>December 2014 - September 2015</strong></p>
+                <p id="employment1-description">Provided safety services to patrons by scanning swimming areas, greeting and providing information and services, cleaning, general maintenance, and management of the pool areas. Trained and earned Lifeguarding, First Aid, CPR, AED, Emergency Oxygen, and YMCA Lifeguarding certification. Provided emergency care when needed in a safe and professional manner, and also trained swimming students on safe and effective techniques.</p>
+                
+            </div>
+        </div>                    
+        <h3>Education</h3>
+        <div id="education">
+            <div id="education5">
+                <p id="education5-heading"><strong>Moraine Park Technical College - IT Software Development</strong></p>
+                <p id="education5-location"><strong>Online</strong></p>
+                <p id="education5-dates"><strong>August 2022 - current</strong></p>
+                <ul id="education5-description">
+                    <li>A member of the IT club.</li>
                 </ul>
             </div>
-            <p>
-                <!-- icon 1 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px;">
-                <!-- icon 2 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 3 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 4 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 5 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 6 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 7 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-                <!-- icon 8 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
-
-                <!-- copyright texts -->
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script>. All rights reserved.
-
-                <!-- icon 9 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 10 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 11 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 12 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 13 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 14 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 15 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
-                <!-- icon 16 -->
-                <img src="images/rabbit-laying-down.png" alt="simple rabbit laying down icon" style="float:right; width:25px; padding-left:5px; transform: scaleX(-1);">
-                </p>
+            <div id="education4">
+                <p id="education4-heading"><strong>Moraine Park Technical College - Cosmetology</strong></p>
+                <p id="education4-location"><strong>Fond du Lac, WI</strong></p>
+                <p id="education4-dates"><strong>June 2019 - October 2020</strong></p>
+                <ul id="education4-description">
+                    <li><em>Graduated October 19, 2020</em></li>
+                    <li>Was a member of MPTC Student Senate and the Cosmetology Club | Dean's List Summer 2019 | 3.3 GPA</li>
+                </ul>
             </div>
-            <div class="references">
-                <a href="references.html">references for this website</a>
+            <div id="education3">
+                <p id="education3-heading"><strong>Aveda Institue of Beauty & Wellness</strong></p>
+                <p id="education3-location"><strong>Milwaukee, WI</strong></p>
+                <p id="education3-dates"><strong>September 2018 - March 2019</strong></p>
+                <ul id="education3-description">
+                    <li><em>No degree obtained</em></li>
+                    <li>Overall grade of 95% | average attendance of 90%</li>
+                </ul>
             </div>
-            <div id="up-to-top">
-                <a href="#top">top of page</a>
+            <div id="education2">
+                <p id="education2-heading"><strong>University of Wisconsin Whitewater</strong></p>
+                <p id="education2-location"><strong>Whitewater, WI</strong></p>
+                <p id="education2-dates"><strong>September 2017 - February 2018</strong></p>
+                <ul id="education2-description">
+                    <li><em>Completed general classes towards business degree. No degree obtained</em></li>
+                    <li>DECA Member | 3.2 GPA</li>
+                </ul>
             </div>
-            <div id="css-validator">
-                <a target="_blank" href="https://jigsaw.w3.org/css-validator/">
-                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-                </a>    
+            <div id="education1">
+                <p id="education1-heading"><strong>Slinger High School</strong></p>
+                <p id="education1-location"><strong>Slinger, WI</strong></p>
+                <p id="education1-dates"><strong>September 2013 - June 2017</strong></p>
+                <ul id="education1-description">
+                    <li><em>Graduated with Honors 2017</em></li>
+                    <li>DECA, FCA (Fellowship of Christian Athletes), Cheerleading, Dance, and Musical Member | National Honor Society Member, May 2017 | 3.58 GPA</li>
+                </ul>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div id="awardscertifications">
+            <h3>Awards & Certifications</h3>
+            <p id="WI-Cosmetology"><strong>Wisconsin Cosmetology State Board Exams [Written & Practical]</strong></p>
+            <ul>
+                <li>Written: Dec 22, 2019 (95%)</li>
+                <li>Practical: Jan 19, 2020 (98%)</li>
+            </ul>
+        </div>
+    </main>
+    <aside id="resume-sidebar">
+        <img id="headshot" src="images/headshot-AnnaCallies.jpeg" alt="head shot of Anna Callies">
+        <h1 id="name-header">Anna Callies</h1>
+        <div id="contact-info">
+            <p>Menomonee Falls, Wisconsin</p>
+            <p>262-444-9995</p>
+            <p>annacallies98@gmail.com</p>
+            <p>acallies4@student.morainepark.edu (student email)</p> 
+        </div>
+        <div id="job-title">
+            <h4>Software Developer</h4>
+        </div>
+        <h3>Personal Interests</h3>
+        <ul id="personal-interests">
+            <li>Beauty - doing hair, nails, and skincare services.</li>
+            <li>Video Games - Animal Crossing.</li>
+            <li>Art and Crafts - drawing, painting, crocheting, scrapbooking, sewing, etc.</li>
+            <li>Design - video editing, designing flyers, websites, programs, etc.</li>
+            <li>Bunnies - taking care of my pet bunnies, holding them, petting and playing with them.</li>
+        </ul>
+        <h3>Photo Gallery</h3>
+        <div id="photo-gallery">
+            <img id="photo1" src="images/AnnaCallies08.jpeg" alt="photo of Anna Callies">
+            <img id="photo2" src="images/CandyCupcake01.jpeg" alt="photo of two cute bunnies">
+            <img id="photo3" src="images/AnnaCallies03.jpeg" alt="photo of Anna Callies">
+            <img id="photo4" src="images/Cupcake03.jpeg" alt="photo of a holland lop rabbit laying in a cardboard box">
+            <img id="photo5" src="images/AnnaCallies01.jpeg" alt="photo of Anna Callies">
+            <img id="photo6" src="images/Candy01.jpeg" alt="photo of a holland lop rabbit">
+            <img id="photo7" src="images/AnnaCallies05.jpeg" alt="photo of Anna Callies">
+            <img id="photo8" src="images/Cupcake02.jpeg" alt="photo of a holland lop rabbit and a baby chicken">
+            <img id="photo9" src="images/AnnaCallies02.jpeg" alt="photo of Anna Callies">
+            <img id="photo10" src="images/Candy02.jpeg" alt="photo of holland lop rabbit on a fluffy pillow">
+            <img id="photo11" src="images/AnnaCallies04.jpeg" alt="photo of Anna Callies">
+        </div>
+    </aside>
+</div>
+        
+        
+<hr>
+<footer class="bottom-footer">
+	<div class="upper-area">
+		<div class="links-socialnetworks">
+			<ul>
+				<!-- facebook -->
+				<li><a href="https://www.facebook.com/annacallies98/" target="_blank"><i class="fa-brands fa-facebook-f">@annacalllies98</i></a></li>
+				<!-- twitter -->
+				<li><a href="https://twitter.com/annacallies98" target="_blank"><i class="fa-brands fa-twitter">@annacallies98</i></a></li>
+				<!-- instagram -->
+				<li><a href="https://www.instagram.com/annacallies/" target="_blank"><i class="fa-brands fa-square-instagram">@annacallies</i></a></li>
+				<!-- linkedin -->
+				<li><a href="https://www.linkedin.com/in/annacallies98/" target="_blank"><i class="fa-brands fa-linkedin-in">@annacallies98</i></a></li>
+				<!-- youtube -->
+				<li><a href="https://www.youtube.com/channel/UCvaEscePYwTNMnP4uagm8lQ" target="_blank"><i class="fa-brands fa-youtube">Anna Callies</i></a></li>
+				<!-- github -->
+				<li><a href="https://github.com/annacallies98" target="_blank"><i class="fa-brands fa-github">@annacallies98</i></a></li>
+				<!-- discord -->
+				<li><a href="https://discordapp.com/users/931042069370257438" target="_blank"><i class="fa-brands fa-discord">Anna9821#2528</i></a></li>
+			</ul>
+		</div>
+		<p>
+			<!-- icon 1 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px;">
+			<!-- icon 2 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 3 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 4 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 5 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 6 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 7 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- icon 8 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:left; width:25px; padding-right:5px; padding-left:5px;">
+			<!-- copyright texts -->
+			Copyright &copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>.
+			All rights reserved.
+			<!-- icon 9 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 10 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 11 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 12 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 13 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 14 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 15 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png"style="float:right; width:25px; padding-right:5px; padding-left:5px; transform: scaleX(-1);">
+			<!-- icon 16 -->
+			<img alt="simple rabbit laying down icon" src="images/rabbit-laying-down.png" style="float:right; width:25px; padding-left:5px; transform: scaleX(-1);">
+		</p>
+	</div>
+	<div class="references">
+		<a href="references.html">references for this website</a>
+	</div>
+	<div id="up-to-top">
+		<a href="#top">top of page</a>
+	</div>
+	<div id="css-validator">
+		<a target="_blank" href="https://jigsaw.w3.org/css-validator/"> <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>
+	</div>
+</footer>
+</body>
 </html>
